@@ -1,0 +1,24 @@
+// EXERCICE 1
+
+ALGORITHME algoSelon1
+VARIABLE
+    mois : ENTIER
+DÉBUT
+    SAISIR mois
+
+    SELON mois
+        CAS 1 : AFFICHER «Janvier»
+        CAS 2 : AFFICHER «Février»
+        CAS 3 : AFFICHER «Mars»
+        CAS 4 : AFFICHER «Avril»
+        CAS 5 : AFFICHER «Mai»
+        CAS 6 : AFFICHER «Juin»
+        CAS 7 : AFFICHER «Juillet»
+        CAS 8 : AFFICHER «Août»
+        CAS 9 : AFFICHER «Septembre»
+        CAS 10 : AFFICHER «Octobre»
+        CAS 11 : AFFICHER «Novembre»
+        CAS 12 : AFFICHER «Décembre»
+        AUTREMENT : «Ce mois n'existe pas»
+    FINSELON
+FIN
