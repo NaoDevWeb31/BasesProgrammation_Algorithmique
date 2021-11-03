@@ -54,3 +54,52 @@ DÉBUT
     
     avancer
 FIN
+
+// EXERCICE 3
+
+ALGORITHME algoVariableType3
+VARIABLES
+    grand : BOOLEEN
+    message : CHAINE DE CARACTERE
+    score : ENTIER
+DÉBUT
+    grand → VRAI
+    message → «»
+    score → 0
+
+    avancer
+
+    tournerGauche
+
+    avancer
+    grand → FAUX
+
+    avancer
+    message → message + «C»
+
+    avancer
+    grand → VRAI
+
+    tournerGauche
+
+    avancer
+    score → score + 10
+
+    avancer
+    score → score + 10
+
+    tournerGauche
+
+    avancer
+    message → message + «C»
+
+    tournerGauche
+
+    avancer
+    grand → FAUX
+
+    tournerDroite
+    
+    avancer
+FIN
+
