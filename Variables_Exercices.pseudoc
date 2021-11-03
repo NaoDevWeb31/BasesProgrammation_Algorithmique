@@ -1,0 +1,37 @@
+// EXERCICE 1
+
+ALGORITHME algoVariable2
+VARIABLE
+    score : ENTIER
+    coeur : ENTIER
+DÉBUT
+    score = 0
+    cœur = 1
+    
+    avancer
+    cœur → cœur + 1
+
+    tournerGauche
+
+    tournerGauche
+
+    avancer
+
+    tournerDroite
+
+    avancer
+    score → score + 10
+
+    tournerDroite
+
+    avancer
+    score → score + 10
+
+    tournerGauche
+
+    tournerGauche
+
+    avancer
+
+    avancer
+FIN
