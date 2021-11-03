@@ -35,3 +35,14 @@ DÉBUT
 
     avancer
 FIN
+
+// EXERCICE 2
+
+Erreurs
+    // 3 & 4
+    tournerDroite
+    // 6
+    tournerGauche
+    // 7
+    avancer
+    score → score + 10
