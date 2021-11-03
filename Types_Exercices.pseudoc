@@ -1,0 +1,31 @@
+// EXERCICE 1
+
+ALGORITHME algoVariableType1
+VARIABLE
+    message : CHAINE DE CARACTERE
+DÉBUT
+    message → «»
+
+    avancer
+    message → message + «H»
+
+    avancer
+    message → message + «E»
+
+    tournerDroite
+
+    avancer
+    message → message + «L»
+
+    avancer
+    message → message + «L»
+
+    tournerGauche
+
+    avancer
+    message → message + «O»
+
+    tournerDroite
+
+    avancer
+FIN
