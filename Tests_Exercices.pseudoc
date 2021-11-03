@@ -1,0 +1,31 @@
+// EXERCICE 1
+
+ALGORITHME algoTest1
+VARIABLE
+    clef : BOOLEEN
+DÉBUT
+    clef → FAUX
+
+    avancer
+
+    tournerDroite
+
+    avancer
+    clef → VRAI
+
+    tournerGauche
+
+    tournerGauche
+
+    avancer
+
+    tournerDroite
+
+    SI clef = VRAI
+        avancer
+    SINON
+        AFFICHER «J'ai oublié la clef !»
+    FINSI
+    
+    avancer
+FIN
