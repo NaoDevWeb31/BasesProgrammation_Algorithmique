@@ -22,3 +22,23 @@ DÉBUT
         AUTREMENT : «Ce mois n'existe pas»
     FINSELON
 FIN
+
+// EXERCICE 2
+
+ALGORITHME algoSelon2
+VARIABLE
+    jour : ENTIER
+DÉBUT
+    SAISIR jour
+
+    SELON jour
+        CAS 1 : AFFICHER «Lundi»
+        CAS 2 : AFFICHER «Mardi»
+        CAS 3 : AFFICHER «Mercredi»
+        CAS 4 : AFFICHER «Jeudi»
+        CAS 5 : AFFICHER «Vendredi»
+        CAS 6 : AFFICHER «Samedi»
+        CAS 7 : AFFICHER «Dimanche»
+        AUTREMENT : «Ce jour n'existe pas»
+    FINSELON
+FIN
