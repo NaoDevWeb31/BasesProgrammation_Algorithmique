@@ -29,3 +29,28 @@ DÉBUT
 
     avancer
 FIN
+
+// EXERCICE 2
+
+ALGORITHME algoVariableType2
+VARIABLE
+    grand : BOOLEEN
+DÉBUT
+    grand → FAUX
+
+    tournerGauche
+
+    avancer
+    grand → VRAI
+
+    avancer
+
+    tournerDroite
+
+    avancer
+    grand → FAUX
+
+    tournerDroite
+    
+    avancer
+FIN
