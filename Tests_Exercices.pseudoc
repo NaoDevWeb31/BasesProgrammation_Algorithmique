@@ -21,7 +21,7 @@ DÉBUT
 
     tournerDroite
 
-    SI clef = VRAI
+    SI clef = VRAI ALORS
         avancer
     SINON
         AFFICHER «J'ai oublié la clef !»
@@ -33,21 +33,19 @@ FIN
 // EXERCICE 2
 
 ALGORITHME algoTest2
-VARIABLES
-    nom : CHAINE DE CARACTERE
+VARIABLE
     age : ENTIER
-    sexe : BOOLEEN
 DÉBUT (Tya)
     age → ageDuPersonnage(25)
 
-    SI age >= 20
+    SI age >= 20 ALORS
         avancer
     SINON
         AFFICHER «Je suis trop jeune !»
         arretDeLalgo
     FINSI
 
-    SI age >= 28
+    SI age >= 28 ALORS
         avancer
     SINON
         AFFICHER «Je suis trop jeune !» (Tya s'arrête ici)
@@ -59,14 +57,14 @@ FIN
 DÉBUT (Milo)
     age → ageDuPersonnage(30)
 
-    SI age >= 20
+    SI age >= 20 ALORS
         avancer
     SINON
         AFFICHER «Je suis trop jeune !»
         arretDeLalgo
     FINSI
 
-    SI age >= 28
+    SI age >= 28 ALORS
         avancer
     SINON
         AFFICHER «Je suis trop jeune !»
@@ -74,3 +72,53 @@ DÉBUT (Milo)
 
     avancer
 FIN (Milo va jusqu'à la fin)
+
+
+
+// EXERCICE 3
+
+ALGORITHME algoTest3
+VARIABLE
+    grand : BOOLEEN
+DÉBUT
+    grand → VRAI
+
+    avancer
+
+    SI toucheBoiteRouge ET grand = VRAI ALORS
+        AFFICHER «Aïe»
+        grand → FAUX
+    FINSI
+
+    tournerGauche
+
+    avancer
+    SI toucheTete ALORS
+        AFFICHER «Youpi»
+        grand → VRAI
+    FINSI
+
+    tournerGauche
+
+    avancer
+    SI toucheBoiteRouge ET grand = VRAI ALORS
+        AFFICHER «Aïe»
+        grand → FAUX
+    FINSI
+
+    tournerDroite
+
+    avancer
+    SI toucheBoiteRouge ET grand = VRAI ALORS
+        AFFICHER «Aïe»
+        grand → FAUX
+    SINON
+        SI toucheBoiteRouge ET grand = FAUX ALORS
+            AFFICHER «Ouille»
+        FINSI
+    FINSI
+
+    tournerGauche
+
+    avancer
+FIN
