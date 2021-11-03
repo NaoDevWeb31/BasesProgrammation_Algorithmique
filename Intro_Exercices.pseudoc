@@ -1,0 +1,36 @@
+// EXERCICE 1
+
+TournerDroite
+TournerDroite
+Avancer
+TournerGauche
+Avancer
+Avancer
+
+// EXERCICE 2
+
+Avancer
+TournerGauche
+Avancer
+TournerDroite
+Avancer
+
+// EXERCICE 3
+
+Avancer
+TournerGauche
+Avancer
+TournerDroite
+Avancer
+TournerDroite
+Avancer
+
+// EXERCICE 4 - Version optimisée
+
+TournerGauche
+TournerGauche
+Avancer
+TournerDroite
+Avancer
+
+
