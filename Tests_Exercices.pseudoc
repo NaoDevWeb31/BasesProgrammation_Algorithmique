@@ -26,6 +26,51 @@ DÉBUT
     SINON
         AFFICHER «J'ai oublié la clef !»
     FINSI
-    
+
     avancer
 FIN
+
+// EXERCICE 2
+
+ALGORITHME algoTest2
+VARIABLES
+    nom : CHAINE DE CARACTERE
+    age : ENTIER
+    sexe : BOOLEEN
+DÉBUT (Tya)
+    age → ageDuPersonnage(25)
+
+    SI age >= 20
+        avancer
+    SINON
+        AFFICHER «Je suis trop jeune !»
+        arretDeLalgo
+    FINSI
+
+    SI age >= 28
+        avancer
+    SINON
+        AFFICHER «Je suis trop jeune !» (Tya s'arrête ici)
+    FINSI
+
+    avancer
+FIN
+
+DÉBUT (Milo)
+    age → ageDuPersonnage(30)
+
+    SI age >= 20
+        avancer
+    SINON
+        AFFICHER «Je suis trop jeune !»
+        arretDeLalgo
+    FINSI
+
+    SI age >= 28
+        avancer
+    SINON
+        AFFICHER «Je suis trop jeune !»
+    FINSI
+
+    avancer
+FIN (Milo va jusqu'à la fin)
