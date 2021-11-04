@@ -1,3 +1,5 @@
+/****************************************** POUR *******************************************/
+
 // EXERCICE 1
 
 ALGORITHME algoBouclePOUR1
@@ -89,3 +91,35 @@ resultat = 6
 Pour cpt = 4
 6*4
 resultat = 24
+
+/****************************************** TANT QUE *******************************************/
+
+// EXEMPLE
+
+ALGORITHME algoBouclePOURTANTQUE
+DÉBUT
+    POUR cpt ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+        TANT QUE nePasAtteindreUnMur FAIRE
+            avancer
+        FINTANTQUE
+        tournerGauche
+    FINPOUR
+FIN
+
+// EXERCICE 1
+
+ALGORITHME exo1TANTQUE
+VARIABLES
+    resultat : ENTIER
+    cpt : ENTIER
+DÉBUT
+    resultat → 1
+    cpt → 1
+
+    TANT QUE (resultat < 1000) FAIRE
+        resultat → resultat * cpt
+        cpt → cpt + 1
+    FINTANTQUE
+
+    AFFICHER resultat
+FIN
