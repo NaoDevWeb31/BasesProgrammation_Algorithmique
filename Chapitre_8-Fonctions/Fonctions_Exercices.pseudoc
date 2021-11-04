@@ -143,3 +143,19 @@ DÉBUT
         AFFICHER chiffre, " est divisible pas 5"
     FINSI
 FIN
+
+FONCTION direBonjour(unPrenom, unNom)
+DÉBUT
+    RETOURNER "Bonjour ", unPrenom, " ", unNom
+FIN
+
+ALGORITHME exoFonctionRetour2
+VARIABLES
+    nom : CHAINE DE CARACTERE
+    prenom : CHAINE DE CARACTERE
+DÉBUT
+    SAISIR nom
+    SAISIR prenom
+
+    AFFICHER direBonjour(prenom, nom)
+FIN
