@@ -123,3 +123,28 @@ DÉBUT
 
     AFFICHER resultat
 FIN
+
+// EXERCICE 2
+
+ALGORITHME exo2TantQue (version 1)
+VARIABLES
+    chiffreSaisi : ENTIER
+DÉBUT
+    chiffre → 0
+
+    TANT QUE (chiffreSaisi < 5) FAIRE
+        SAISIR chiffreSaisi
+    FINTANTQUE
+FIN
+
+ALGORITHME exo2TantQue (version 2)
+VARIABLES
+    chiffreSaisi : ENTIER
+DÉBUT
+    FAIRE
+        SAISIR chiffreSaisi
+    TANT QUE (chiffreSaisi < 5)
+FIN
+
+TANT QUE plus souvent utilisée
+FAIRE TANT QUE (ou répéter jusqu'à) uniquement si on est certain de ne pas créer de bug à la première itération
