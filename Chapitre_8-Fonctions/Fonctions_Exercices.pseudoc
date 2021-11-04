@@ -78,3 +78,19 @@ DÉBUT
     afficherNombrePair(122) // pair
     afficherNombrePair(133) // pas pair
 FIN
+
+/****************************************** AVEC PLUSIEURS PARAMÈTRES *******************************************/
+
+FONCTION moyenne(nombre1, nombre2, nombre3)
+    resultat : ENTIER
+DÉBUT
+    resultat → (nombre1 + nombre2 + nombre3) / 3
+    AFFICHER "La moyenne est de : ", resultat
+FIN
+
+ALGORITHME exoFonctionParams1
+DÉBUT
+    moyenne(5, 10, 15) // "La moyenne est de : 10"
+    moyenne(12, 8, 10) // "La moyenne est de : 10"
+    moyenne(9, 3, 6) // "La moyenne est de : 6"
+FIN
