@@ -13,3 +13,38 @@ DÉBUT
 
     avancer
 FIN
+
+// EXERCICE 2
+
+Instructions sans boucles :
+avancer(3)
+tournerGauche
+avancer(3)
+tournerGauche
+avancer(3)
+tournerGauche
+
+ALGORITHME algoBouclePOUR2 (version 1)
+VARIABLE
+    cpt : ENTIER
+DÉBUT
+    POUR cpt ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+        avancer
+        avancer
+        avancer
+        tournerGauche
+    FIN POUR
+FIN
+
+ALGORITHME algoBouclePOUR2 (version 2)
+VARIABLE
+    cpt : ENTIER
+    cpt2 : ENTIER
+DÉBUT
+    POUR cpt ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+        POUR cpt2 ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+            avancer
+        FINPOUR
+        tournerGauche
+    FINPOUR
+FIN
