@@ -1,0 +1,29 @@
+/****************************************** EXERCICE 1 *******************************************/
+
+ALGORITHME exoTableau1 (version 1)
+VARIABLE
+    tab[n] : TABLEAU ENTIER
+DÉBUT
+    tab[0] → 1
+    tab[1] → 2
+    tab[2] → 3
+    tab[3] → 4
+    tab[4] → 5
+    tab[5] → 6
+FIN
+
+ALGORITHME exoTableau1 (version 2)
+VARIABLE
+    tab[n] : TABLEAU ENTIER
+DÉBUT
+    POUR compteur ALLANT DE 0 À 5 PAR PAS DE 1 FAIRE
+        tab[compteur] → compteur + 1
+    FINPOUR
+FIN
+
+ALGORITHME exoTableau1 (version 3)
+VARIABLE
+    tab[n] : TABLEAU ENTIER
+DÉBUT
+    tab → [1, 2, 3, 4, 5, 6]
+FIN
