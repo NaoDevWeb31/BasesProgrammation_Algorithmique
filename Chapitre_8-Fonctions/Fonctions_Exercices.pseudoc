@@ -94,3 +94,30 @@ DÉBUT
     moyenne(12, 8, 10) // "La moyenne est de : 10"
     moyenne(9, 3, 6) // "La moyenne est de : 6"
 FIN
+
+FONCTION superFonction(unNombre, unBooleen)
+DÉBUT
+    SI (unNombre < 18) ALORS
+        AFFICHER "Trop jeune"
+    SINON SI (unNombre > 30) ALORS
+        AFFICHER "Trop vieux"
+    FINSI
+    
+    SI (unBooleen) ALORS
+        AFFICHER "Femme"
+    SINON
+        AFFICHER "Homme"
+    FINSI
+FIN
+
+ALGORITHME exoFonctionParams2
+VARIABLES
+    chiffre : ENTIER
+    sexe : BOOLEEN
+DÉBUT
+    chiffre → 33
+    sexe → FAUX
+
+    superFonction(20, VRAI) // "Femme"
+    superFonction(sexe, chiffre) // Erreur
+FIN
