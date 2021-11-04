@@ -1,0 +1,16 @@
+/****************************************** EXERCICE 5 *******************************************/
+
+ALGORITHME exo5
+VARIABLES
+    chiffre : ENTIER
+    resultat : ENTIER
+DÉBUT
+    SAISIR chiffre
+    resultat → 1
+
+    POUR cpt ALLANT DE 10 À 1 PAR PAS DE -1 FAIRE
+        resultat → cpt * chiffre
+    FINPOUR
+
+    AFFICHER resultat, " = ", cpt, " * ", chiffre
+FIN

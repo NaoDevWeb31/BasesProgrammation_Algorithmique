@@ -1,7 +1,7 @@
 /****************************************** EXERCICE 4 *******************************************/
 
 ALGORITHME exo4
-VARIABLE
+VARIABLES
     chiffre1 : ENTIER
     chiffre2 : ENTIER
     resultat : ENTIER
