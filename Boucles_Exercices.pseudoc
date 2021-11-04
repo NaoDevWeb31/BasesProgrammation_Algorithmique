@@ -37,7 +37,7 @@ DÉBUT
 FIN
 
 ALGORITHME algoBouclePOUR2 (version 2)
-VARIABLE
+VARIABLES
     cpt : ENTIER
     cpt2 : ENTIER
 DÉBUT
@@ -46,5 +46,16 @@ DÉBUT
             avancer
         FINPOUR
         tournerGauche
+    FINPOUR
+FIN
+
+// EXERCICE 3
+
+ALGORITHME algoBouclePOUR3
+VARIABLE
+    cpt : ENTIER
+DÉBUT
+    POUR cpt ALLANT DE 1 À 10 PAR PAS DE 1 FAIRE
+        AFFICHER (2 * cpt)
     FINPOUR
 FIN
