@@ -1,0 +1,14 @@
+/****************************************** EXERCICE 4 *******************************************/
+
+ALGORITHME exo4
+VARIABLE
+    chiffre1 : ENTIER
+    chiffre2 : ENTIER
+    resultat : ENTIER
+DÉBUT
+    chiffre1 → ALEATOIRE(1, 20)
+    chiffre2 → ALEATOIRE(1, 20)
+
+    resultat → chiffre1 - chiffre2
+    AFFICHER resultat
+FIN
