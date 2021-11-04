@@ -1,3 +1,5 @@
+/****************************************** SANS PARAMÈTRE *******************************************/
+
 // EXERCICE 1
 
 FONCTION blocRouge
@@ -38,5 +40,22 @@ DÉBUT
 
     POUR cpt ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
         sequence
+    FINPOUR
+FIN
+
+/****************************************** AVEC PARAMÈTRE *******************************************/
+
+FONCTION direBonjour(pseudo)
+DÉBUT
+    AFFICHER "Bonjour ", pseudo
+FIN
+
+ALGORITHME exoFonctionParam1
+DÉBUT
+    direBonjour("toto")
+    direBonjour("Naomi")
+    
+    POUR cpt ALLANT DE 0 À 6 PAR PAS DE 2 FAIRE (4 fois)
+        direBonjour("toi")
     FINPOUR
 FIN
