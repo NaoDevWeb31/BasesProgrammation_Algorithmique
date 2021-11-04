@@ -1,0 +1,8 @@
+/****************************************** EXERCICE 8 *******************************************/
+
+ALGORITHME exo8
+DÉBUT
+    TANT QUE(NON finDeFichier) FAIRE
+        AFFICHER "*"
+    FINTANTQUE
+FIN
