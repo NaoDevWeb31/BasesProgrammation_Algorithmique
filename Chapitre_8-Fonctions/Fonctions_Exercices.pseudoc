@@ -45,6 +45,8 @@ FIN
 
 /****************************************** AVEC PARAMÈTRE *******************************************/
 
+// EXERCICE 2
+
 PROCEDURE direBonjour(pseudo)
 DÉBUT
     AFFICHER "Bonjour ", pseudo
@@ -59,6 +61,8 @@ DÉBUT
         direBonjour("toi")
     FINPOUR
 FIN
+
+// EXERCICE 3
 
 PROCEDURE afficherNombrePair(nombre)
     estPair : BOOLEEN
@@ -81,6 +85,8 @@ FIN
 
 /****************************************** AVEC PLUSIEURS PARAMÈTRES *******************************************/
 
+// EXERCICE 4
+
 PROCEDURE moyenne(nombre1, nombre2, nombre3)
     resultat : ENTIER
 DÉBUT
@@ -94,6 +100,8 @@ DÉBUT
     moyenne(12, 8, 10) // "La moyenne est de : 10"
     moyenne(9, 3, 6) // "La moyenne est de : 6"
 FIN
+
+// EXERCICE 5
 
 PROCEDURE superFonction(unNombre, unBooleen)
 DÉBUT
@@ -124,6 +132,8 @@ FIN
 
 /****************************************** RETOUR DE FONCTION *******************************************/
 
+// EXERCICE 6
+
 FONCTION estDivisiblePar5(nombre)
 DÉBUT
     SI (nombre mod 5 = 0) ALORS
@@ -144,6 +154,8 @@ DÉBUT
     FINSI
 FIN
 
+// EXERCICE 7
+
 FONCTION direBonjour(unPrenom, unNom)
 DÉBUT
     RETOURNER "Bonjour ", unPrenom, " ", unNom
@@ -158,4 +170,70 @@ DÉBUT
     SAISIR prenom
 
     AFFICHER direBonjour(prenom, nom)
+FIN
+
+/****************************************** FINAL *******************************************/
+
+// EXERCICE 8
+
+PROCEDURE afficherMenu
+VARIABLE
+    monMenu : CHAINE DE CARACTERE
+DÉBUT
+    monMenu → "1 / Factorielle"
+    monMenu → monMenu +  "2 / Somme"
+    monMenu → monMenu +  "0 / Quitter"
+    AFFICHER monMenu
+FIN
+
+FONCTION factorielle(chiffre)
+    resultat : ENTIER
+DÉBUT
+    resultat → 1
+
+    POUR compteur ALLANT DE 1 À chiffre PAR PAS DE 1 FAIRE
+        resultat → resultat * compteur
+    FINPOUR
+
+    RETOURNER resultat
+FIN
+
+FONCTION somme(chiffre)
+    resultat : ENTIER
+DÉBUT
+    resultat → 0
+    
+    POUR compteur ALLANT DE 1 À chiffre PAR PAS DE 1 FAIRE
+        resultat → resultat + compteur
+    FINPOUR
+
+    RETOURNER resultat
+FIN
+
+ALGORITHME exoFonctions
+VARIABLES
+    actionSaisi : ENTIER
+    nombreSaisie : ENTIER
+    resultat : ENTIER
+DÉBUT
+    FAIRE
+        afficherMenu
+        
+        AFFICHER "Quelle action souhaitez-vous effectuer ?"
+
+        SAISIR actionSaisie
+
+        AFFICHER "Saisir le chiffre pour le calcul"
+
+        SAISIR nombreSaisi
+
+        SELON actionSaisie
+            CAS 1 : resultat → factorielle(nombreSaisi)
+            CAS 2 : resultat → somme(nombreSaisi)
+            CAS 0 : AFFICHER "À plus !"
+            AUTREMENT : AFFICHER "Je n'ai pas compris ! Choisir entre 1, 2 ou 0"
+        FINSELON
+
+        AFFICHER "Le résultat est : ", resultat
+    TANT QUE (actionSaisie !== 0)
 FIN
