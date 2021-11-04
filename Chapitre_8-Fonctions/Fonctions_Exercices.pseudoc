@@ -2,13 +2,13 @@
 
 // EXERCICE 1
 
-FONCTION blocRouge
+PROCEDURE blocRouge
 DÉBUT
     avancer
     tournerGauche
 FIN
 
-FONCTION blocVert
+PROCEDURE blocVert
 DÉBUT
     avancer
     tournerDroite
@@ -26,7 +26,7 @@ DÉBUT
     FINPOUR
 FIN
 
-FONCTION sequence
+PROCEDURE sequence
 DÉBUT
     blocVert
     blocVert
@@ -45,7 +45,7 @@ FIN
 
 /****************************************** AVEC PARAMÈTRE *******************************************/
 
-FONCTION direBonjour(pseudo)
+PROCEDURE direBonjour(pseudo)
 DÉBUT
     AFFICHER "Bonjour ", pseudo
 FIN
@@ -60,7 +60,7 @@ DÉBUT
     FINPOUR
 FIN
 
-FONCTION afficherNombrePair(nombre)
+PROCEDURE afficherNombrePair(nombre)
     estPair : BOOLEEN
 DÉBUT
     SI (nombre mod 2 = 0) ALORS
@@ -81,7 +81,7 @@ FIN
 
 /****************************************** AVEC PLUSIEURS PARAMÈTRES *******************************************/
 
-FONCTION moyenne(nombre1, nombre2, nombre3)
+PROCEDURE moyenne(nombre1, nombre2, nombre3)
     resultat : ENTIER
 DÉBUT
     resultat → (nombre1 + nombre2 + nombre3) / 3
@@ -95,7 +95,7 @@ DÉBUT
     moyenne(9, 3, 6) // "La moyenne est de : 6"
 FIN
 
-FONCTION superFonction(unNombre, unBooleen)
+PROCEDURE superFonction(unNombre, unBooleen)
 DÉBUT
     SI (unNombre < 18) ALORS
         AFFICHER "Trop jeune"
@@ -120,4 +120,26 @@ DÉBUT
 
     superFonction(20, VRAI) // "Femme"
     superFonction(sexe, chiffre) // Erreur
+FIN
+
+/****************************************** RETOUR DE FONCTION *******************************************/
+
+FONCTION estDivisiblePar5(nombre)
+DÉBUT
+    SI (nombre mod 5 = 0) ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FINSI
+FIN
+
+ALGORITHME exoFonctionRetour1
+VARIABLE
+    chiffre : ENTIER
+DÉBUT
+    SAISIR chiffre
+
+    SI estDivisiblePar5(chiffre) ALORS
+        AFFICHER chiffre, " est divisible pas 5"
+    FINSI
 FIN
