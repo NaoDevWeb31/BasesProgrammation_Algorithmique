@@ -1,0 +1,15 @@
+// EXERCICE 1
+
+ALGORITHME algoBouclePOUR1
+VARIABLE
+    cpt : ENTIER
+DÉBUT
+    POUR cpt ALLANT DE 1 À 2 PAR PAS DE 1 FAIRE
+        avancer
+        tournerDroite
+        avancer
+        tournerGauche
+    FIN POUR
+
+    avancer
+FIN
