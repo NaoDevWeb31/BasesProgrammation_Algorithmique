@@ -1,0 +1,18 @@
+/****************************************** EXERCICE 6 *******************************************/
+
+ALGORITHME exo6
+VARIABLE
+    chiffre : ENTIER
+DÉBUT
+    FAIRE
+        AFFICHER "Saisir un chiffre entre 10 et 20"
+        SAISIR chiffre
+        SI (chiffre < 10) ALORS
+            AFFICHER "Le chiffre est trop petit"
+        SINON
+            SI(chiffre > 20) ALORS
+                AFFICHER "Le chiffre est trop grand"
+            FINSI
+        FINSI
+    TANT QUE (chiffre < 10 OU chiffre > 20)
+FIN
