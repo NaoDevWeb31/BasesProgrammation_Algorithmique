@@ -1,0 +1,48 @@
+/****************************************** EXERCICE 2 *******************************************/
+
+/***************************** Version 1 *****************************/
+
+ALGORITHME exoTableau2
+VARIABLES
+    tab[n] : TABLEAU ENTIER
+    resultat : ENTIER
+DÉBUT
+    resultat → 0
+
+    POUR i ALLANT DE 0 À 3 PAR PAS DE 1 FAIRE
+        tab[i] → aleatoire(0, 20)
+        resultat → resultat + tab[i]
+    FINPOUR
+    
+    resultat  → resultat / taille(tab)
+    
+    AFFICHER resultat
+FIN
+
+/***************************** Version 2 *****************************/
+
+FONCTION moyenne(tab)
+VARIABLE
+    resultat : ENTIER
+DÉBUT
+    resultat → 0
+
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        resultat → resultat + tab[i]
+    FINPOUR
+
+    resultat  → resultat / taille(tab)
+    
+    RETOURNER resultat
+FIN
+
+ALGORITHME exoTableau2
+VARIABLE
+    tab[n] : TABLEAU ENTIER
+DÉBUT
+    POUR i ALLANT DE 0 À 3 PAR PAS DE 1 FAIRE
+        tab[i] → aleatoire(0, 20)
+    FINPOUR
+    
+    AFFICHER moyenne(tab)
+FIN
