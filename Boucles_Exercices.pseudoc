@@ -1,8 +1,6 @@
 // EXERCICE 1
 
 ALGORITHME algoBouclePOUR1
-VARIABLE
-    cpt : ENTIER
 DÉBUT
     POUR cpt ALLANT DE 1 À 2 PAR PAS DE 1 FAIRE
         avancer
@@ -25,8 +23,6 @@ avancer(3)
 tournerGauche
 
 ALGORITHME algoBouclePOUR2 (version 1)
-VARIABLE
-    cpt : ENTIER
 DÉBUT
     POUR cpt ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
         avancer
@@ -37,9 +33,6 @@ DÉBUT
 FIN
 
 ALGORITHME algoBouclePOUR2 (version 2)
-VARIABLES
-    cpt : ENTIER
-    cpt2 : ENTIER
 DÉBUT
     POUR cpt ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
         POUR cpt2 ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
@@ -52,10 +45,47 @@ FIN
 // EXERCICE 3
 
 ALGORITHME algoBouclePOUR3
-VARIABLE
-    cpt : ENTIER
 DÉBUT
     POUR cpt ALLANT DE 1 À 10 PAR PAS DE 1 FAIRE
         AFFICHER (2 * cpt)
     FINPOUR
 FIN
+
+// EXERCICE 4
+
+ALGORITHME algoBouclePOUR4
+VARIABLES
+    chiffreSaisi : ENTIER
+    resultat : ENTIER
+DÉBUT
+    SAISIR chiffreSaisi
+    resultat → 1
+
+    POUR cpt ALLANT DE 1 À chiffreSaisi PAR PAS DE 1 FAIRE
+        resultat → resultat * cpt
+    FINPOUR
+
+    AFFICHER resultat
+FIN
+
+Exemple :
+
+chiffreSaisi = 4 & resultat = 1
+
+Exécuter (resultat * cpt) 4 fois
+
+Pour cpt = 1
+1*1
+resultat = 1
+
+Pour cpt = 2
+1*2
+resultat = 2
+
+Pour cpt = 3
+2*3
+resultat = 6
+
+Pour cpt = 4
+6*4
+resultat = 24
