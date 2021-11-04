@@ -1,0 +1,56 @@
+/****************************************** EXERCICE 1 *******************************************/
+
+ALGORITHME exo1 (sans boucle)
+DÉBUT
+    tournerGauche
+    avancer
+
+    tournerGauche
+    avancer
+
+    tournerDroite
+    avancer
+
+    tournerDroite
+    avancer
+
+    tournerGauche
+    avancer
+
+    tournerDroite
+    avancer
+
+    tournerDroite
+    avancer
+
+    tournerGauche
+    avancer
+
+    tournerDroite
+    avancer
+
+    tournerDroite
+    avancer
+
+    tournerGauche
+    avancer
+FIN
+
+ALGORITHME exo1 (avec boucle)
+DÉBUT
+    POUR cpt ALLANT DE 1 À 2 PAR PAS DE 1 FAIRE
+        tournerGauche
+        avancer
+    FINPOUR
+
+    POUR cpt2 ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+        tournerDroite
+        avancer
+
+        tournerDroite
+        avancer
+
+        tournerGauche
+        avancer
+    FINPOUR
+FIN
