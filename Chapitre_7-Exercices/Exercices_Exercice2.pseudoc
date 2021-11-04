@@ -1,0 +1,52 @@
+/****************************************** EXERCICE 2 *******************************************/
+
+ALGORITHME exo2
+VARIABLES
+    clefBleu : BOOLEEN
+    score : ENTIER
+DÉBUT
+    clefBleu → FAUX
+    score → 0
+
+    SI (pomme) ALORS
+        score → score + 10
+    FINSI
+
+    tournerGauche
+    avancer
+
+    avancer
+    clefBleu → VRAI
+
+    tournerGauche
+    tournerGauche
+
+    avancer
+    tournerGauche
+
+    SI (clefBleu = VRAI) ALORS
+        avancer
+    SINON
+        finAlgo
+    FINSI
+
+    avancer
+
+    tournerGauche
+    avancer
+
+    tournerGauche
+    tournerGauche
+
+    POUR cpt ALLANT DE 1 À 4 PAR PAS DE 1 FAIRE
+        SI (porteRouge) ALORS
+            SI (score >= 30) ALORS
+                avancer
+            SINON
+                finAlgo
+            FINSI
+        SINON
+            avancer
+        FINSI
+    FINPOUR
+FIN
