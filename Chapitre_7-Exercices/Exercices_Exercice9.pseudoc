@@ -1,0 +1,16 @@
+/****************************************** EXERCICE 9 *******************************************/
+
+ALGORITHME exo9
+VARIABLES
+    random : ENTIER
+    resultat : ENTIER
+DÉBUT
+    random → ALEATOIRE(1,20)
+    resultat → 0
+
+    POUR compteur ALLANT DE 1 À random PAR PAS DE 1 FAIRE
+        resultat → resultat + compteur
+    FINPOUR
+
+    AFFICHER "Le résultat est : ", resultat
+FIN
