@@ -1,0 +1,16 @@
+/****************************************** EXERCICE 3 *******************************************/
+
+ALGORITHME exo3
+VARIABLES
+    chiffre1 : ENTIER
+    chiffre2 : ENTIER
+    resultat : ENTIER
+DÉBUT
+    resultat → 0
+
+    SAISIR chiffre1
+    SAISIR chiffre2
+
+    resultat → chiffre1 + chiffre2
+    AFFICHER resultat
+FIN
