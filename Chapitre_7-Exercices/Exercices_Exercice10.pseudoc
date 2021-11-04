@@ -1,0 +1,14 @@
+/****************************************** EXERCICE 10 *******************************************/
+
+ALGORITHME exo10
+VARIABLES
+    chiffre : ENTIER
+    ligne : CHAINE DE CARACTERE
+DÉBUT
+    SAISIR chiffre
+    ligne → "---------------------"
+    
+    POUR compteur ALLANT DE 1 À chiffre PAR PAS DE 1 FAIRE
+        AFFICHER ligne
+    FINPOUR
+FIN
