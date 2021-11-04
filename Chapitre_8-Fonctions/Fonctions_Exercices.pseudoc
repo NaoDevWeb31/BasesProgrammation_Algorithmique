@@ -55,7 +55,26 @@ DÉBUT
     direBonjour("toto")
     direBonjour("Naomi")
     
-    POUR cpt ALLANT DE 0 À 6 PAR PAS DE 2 FAIRE (4 fois)
+    POUR cpt ALLANT DE 0 À 6 PAR PAS DE 2 FAIRE // 4 fois
         direBonjour("toi")
     FINPOUR
+FIN
+
+FONCTION afficherNombrePair(nombre)
+    estPair : BOOLEEN
+DÉBUT
+    SI (nombre mod 2 = 0) ALORS
+        estPair → VRAI
+        AFFICHER "Le nombre est pair"
+    SINON
+        estPair → FAUX
+        AFFICHER "Le nombre n'est pas pair"
+    FINSI
+FIN
+
+ALGORITHME exoFonctionParam2
+DÉBUT
+    afficherNombrePair(4) // pair
+    afficherNombrePair(122) // pair
+    afficherNombrePair(133) // pas pair
 FIN
