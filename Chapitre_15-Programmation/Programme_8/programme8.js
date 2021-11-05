@@ -1,9 +1,9 @@
-var tab = [];
+var tab = [10, 12, 14, 18, 20, 10, 12, 8, 4, 8];
 var resultat = 0;
 
-for (let i = 0; i <= 3; i++) {
-  tab[i] = Math.floor(Math.random() * 21);
-}
+// for (let i = 0; i <= 3; i++) {
+//   tab[i] = Math.floor(Math.random() * 21);
+// }
 resultat = moyenne(tab);
 console.log("La moyenne est de : " + resultat);
 
