@@ -1,0 +1,10 @@
+/*************************************** EXERCICE ***************************************/
+
+FONCTION factorielle(nombre : ENTIER)
+DÉBUT
+    SI (nombre = 1) ALORS
+        RETOURNER 1
+    SINON
+        RETOURNER nombre * factorielle(nombre - 1)
+    FINSI
+FIN
