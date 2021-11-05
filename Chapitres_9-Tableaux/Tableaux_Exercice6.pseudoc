@@ -1,0 +1,26 @@
+/****************************************** EXERCICE 6 *******************************************/
+
+FONCTION fonctionTabsPlusGrandeMoy(tab1 : TABLEAU ENTIER, tab2 : TABLEAU ENTIER)
+VARIABLES
+    moyenneTab1 : ENTIER
+    moyenneTab2 : ENTIER
+DÉBUT
+    moyenneTab1 → 0
+    moyenneTab2 → 0
+
+    POUR i ALLANT DE 0 À taille(tab1)-1 PAR PAS DE 1 FAIRE
+        moyenneTab1 → moyenneTab1 + tab1[i]
+    FINPOUR
+    moyenneTab1 → moyenneTab1 / taille(tab1)
+
+    POUR j ALLANT DE 0 À taille(tab2)-1 PAR PAS DE 1 FAIRE
+        moyenneTab2 → moyenneTab2 + tab2[j]
+    FINPOUR
+    moyenneTab2 → moyenneTab2 / taille(tab2)
+
+    SI (moyenneTab1 > moyenneTab2) ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FINSI
+FIN
