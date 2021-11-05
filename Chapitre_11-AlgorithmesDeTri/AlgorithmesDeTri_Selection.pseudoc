@@ -1,0 +1,82 @@
+/****************************************** EXEMPLE *******************************************/
+
+FONCTION triSelect(tab : TABLEAU ENTIER)
+VARIABLES
+    min : ENTIER
+    tmp : ENTIER
+DÉBUT
+    POUR i ALLANT DE 0 À taille(tab)-2 PAR PAS DE 1 FAIRE
+        min → i
+        POUR j ALLANT DE i+1 À taille(tab)-1 PAR PAS DE 1 FAIRE
+            SI (tab[j] < tab[min]) ALORS
+                min → j
+            FINSI
+        FINPOUR
+
+        SI (min != i) ALORS
+            tmp = tab[i]
+            tab[i] = tab[min]
+            tab[min] = tmp
+        FINSI
+    FINPOUR
+FIN
+
+/***************************** Explication *****************************/
+tab → [3, 6, 5, 1, 4, 2]
+
+/***************************** Tour *****************************/
+
+min = 0         tab[0] = 3
+
+1ère étape:
+tab[j] < tab[min] = tab[1] < tab[0] ➡︎ 6 > 3 ALORS on ne fait rien
+
+2e étape:
+tab[j] < tab[min] = tab[2] < tab[0] → 5 > 3 ALORS on ne fait rien
+
+3e étape:
+tab[j] < tab[min] = tab[3] < tab[0] → 1 < 3 ALORS 
+    min → j = 3
+
+4e étape:
+tab[j] < tab[min] = tab[4] < tab[3] → 4 > 1 ALORS on ne fait rien
+
+5e étape:
+tab[j] < tab[min] = tab[5] < tab[3] → 2 > 1 ALORS on ne fait rien
+
+1ère boucle terminée:
+min != i ➡︎ 3 != 0 ALORS
+    tmp = tab[i] = tab[0] = 3
+    tab[i] = tab[min] = tab[3] = 1
+    tab[min] = tmp = 3
+
+tab → [1, 6, 5, 3, 4, 2]
+
+/***************************** Tour *****************************/
+
+min = 1         tab[0] = 6
+
+1ère étape:
+tab[j] < tab[min] = tab[2] < tab[1] ➡︎ 5 < 6 ALORS
+    min → j = 2                                                     tab → [1, 2, 5, 3, 4, 6]
+
+2e étape:
+tab[j] < tab[min] = tab[3] < tab[2] → 3 < 5 ALORS
+    min → j = 3
+
+3e étape:
+tab[j] < tab[min] = tab[4] < tab[3] → 4 > 3 ALORS on ne fait rien
+
+4e étape:
+tab[j] < tab[min] = tab[5] < tab[3] → 2 < 4 ALORS
+    min → j = 5
+
+Fin du tableau
+min != i ➡︎ 5 != 1 ALORS
+    tmp = tab[i] = tab[1] = 6
+    tab[i] = tab[min] = tab[5] = 2
+    tab[min] = tmp = 6
+
+
+
+tab → [1, 2, 3, 4, 5, 6]
