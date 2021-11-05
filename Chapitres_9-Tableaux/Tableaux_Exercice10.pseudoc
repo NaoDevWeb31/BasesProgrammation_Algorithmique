@@ -1,0 +1,16 @@
+/****************************************** EXERCICE 10 *******************************************/
+
+FONCTION calculTab(tab : TABLEAU ENTIER, nombre : ENTIER)
+VARIABLE
+    resultat : ENTIER
+DÉBUT
+    resultat → 0
+
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI (tab[i] > 20) ALORS
+            resultat → resultat + (tab[i] * nombre)
+        FINSI
+    FINPOUR
+
+    RETOURNER resultat
+FIN
