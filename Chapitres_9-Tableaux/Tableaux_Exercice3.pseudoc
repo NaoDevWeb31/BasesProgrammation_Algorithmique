@@ -1,0 +1,17 @@
+/****************************************** EXERCICE 3 *******************************************/
+
+ALGORITHME exoTableau3
+VARIABLES
+    tabLettres[c] : TABLEAU DE CARACTERE
+    cpt : ENTIER
+    quitter : CHAINE DE CARACTERE
+DÉBUT
+    cpt → 0
+
+    FAIRE
+        SAISIR tabLettres[cpt]
+        cpt++;
+        AFFICHER "Souhaitez-vous continuer ?"
+        SAISIR quitter
+    TANT QUE (quitter !== "non")
+FIN
