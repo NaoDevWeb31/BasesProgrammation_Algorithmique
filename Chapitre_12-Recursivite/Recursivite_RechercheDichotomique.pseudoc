@@ -1,0 +1,44 @@
+/*************************************** RECHERCHE DICHOTOMIQUE SUR TABLEAU TRIÉ ***************************************/
+
+
+/******************************** FONCTION SIMPLE ********************************/
+
+FONCTION recherche(eltRecherche : ENTIER, tab : TABLEAU ENTIER)
+VARIABLE
+    milieu : ENTIER
+DÉBUT
+    milieu → taille(tab) / 2
+
+    SI (tab[milieu] = eltRecherche) ALORS
+        RETOURNER milieu
+    SINON
+        SI (tab[milieu] < eltRecherche) ALORS
+            // RECHERCHER sur la partie inférieure du tableau
+        SINON
+            // RECHERCHER sur la partie supérieure du tableau
+        FINSI
+    FINSI
+FIN
+
+Étape 1 :
+    100 / 2 = 50 ➡︎ indiquer 50
+    "C'est plus grand"
+
+/******************************** FONCTION RÉCURSIVE ********************************/
+
+FONCTION recherche(eltRecherche : ENTIER, tab : TABLEAU ENTIER)
+VARIABLE
+    milieu : ENTIER
+DÉBUT
+    milieu → taille(tab) / 2
+
+    SI (tab[milieu] = eltRecherche) ALORS
+        RETOURNER milieu // Condition d'arrêt
+    SINON
+        SI (tab[milieu] < eltRecherche) ALORS
+            RETOURNER recherche(eltRecherche, tab[0 : milieu]) // RECHERCHER sur la partie inférieure du tableau
+        SINON
+            RETOURNER recherche(eltRecherche, tab[milieu : taille(tab)-1]) // RECHERCHER sur la partie supérieure du tableau
+        FINSI
+    FINSI
+FIN
