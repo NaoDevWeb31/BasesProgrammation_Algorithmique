@@ -23,3 +23,16 @@ DÉBUT
         AFFICHER tab[i][j]
     FINPOUR
 FIN
+
+/****************************************** EXERCICE 1 *******************************************/
+
+ALGORITHME exo1TabMultiDim
+VARIABLE
+    tab[c][c] : TABLEAU CHAINE DE CARACTERE
+DÉBUT
+    tab → [["Tya", "MILO"], ["Marco", "POLO"], ["Pablo", "PICASSO"]]
+    
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i][0], " - ", tab[i][1]
+    FINPOUR
+FIN
