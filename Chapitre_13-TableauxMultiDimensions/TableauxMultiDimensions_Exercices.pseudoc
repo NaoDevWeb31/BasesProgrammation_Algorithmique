@@ -36,3 +36,35 @@ DÉBUT
         AFFICHER tab[i][0], " - ", tab[i][1]
     FINPOUR
 FIN
+
+/****************************************** EXERCICE 2 *******************************************/
+
+FONCTION calculMoyenne(tab : TABLEAU ENTIER)
+VARIABLE
+    moyenne : ENTIER
+DÉBUT
+    moyenne → 0
+    
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        moyenne → moyenne + tab[i]
+    FINPOUR
+
+    RETOURNER moyenne / taille(tab)
+FIN
+
+ALGORITHME exo2TabMultiDim
+VARIABLES
+    tab[n][n] : TABLEAU ENTIER
+    moyenne1, moyenne2, moyenne3 : ENTIER
+DÉBUT
+    tab → [[4, 17], [11, 12], [12, 14]]
+    
+    moyenne1 → calculMoyenne(tab[0])
+    AFFICHER "La moyenne de l'élève 1 est de : ", moyenne1
+
+    moyenne2 → calculMoyenne(tab[1])
+    AFFICHER "La moyenne de l'élève 2 est de : ", moyenne2
+
+    moyenne3 → calculMoyenne(tab[2])
+    AFFICHER "La moyenne de l'élève 3 est de : ", moyenne3
+FIN
