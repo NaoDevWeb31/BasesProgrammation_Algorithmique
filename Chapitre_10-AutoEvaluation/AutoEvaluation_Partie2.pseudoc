@@ -1,0 +1,27 @@
+/****************************************** PARTIE 2 *******************************************/
+
+PROCEDURE avancer(pas : ENTIER)
+DÉBUT
+    POUR cpt ALLANT DE 1 À pas PAR PAS DE 1 FAIRE
+        avancer
+    FINPOUR
+FIN
+
+PROCEDURE sequence(nombre : ENTIER)
+DÉBUT
+    POUR cpt ALLANT DE 1 À nombre PAR PAS DE 1 FAIRE
+        avancer(4)
+        tournerDroite
+        avancer(1)
+        tournerDroite
+        avancer(4)
+        tournerGauche
+        avancer(1)
+        tournerGauche
+    FINPOUR
+FIN
+
+ALGORITHME parcoursMilo
+DÉBUT
+    sequence(3)
+FIN
