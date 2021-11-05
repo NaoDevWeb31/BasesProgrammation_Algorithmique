@@ -1,0 +1,25 @@
+/****************************************** EXERCICE 4 *******************************************/
+
+FONCTION fonctionTableau(tab)
+DÉBUT
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+ALGORITHME exoTableau4
+VARIABLES
+    tabNombres[n] : TABLEAU ENTIER
+    tabLettres[c] : TABLEAU DE CARACTERE
+DÉBUT
+    POUR i ALLANT DE 0 À 5 PAR PAS DE 1 FAIRE
+        tabNombres[i] → i + 1
+    FINPOUR
+
+    tabLettres[0] → "a"
+    tabLettres[1] → "b"
+    tabLettres[2] → "c"
+
+    fonctionTableau(tabNombres)
+    fonctionTableau(tabLettres)
+FIN
