@@ -1,0 +1,35 @@
+/****************************************** EXERCICE 7 *******************************************/
+
+FONCTION fonctionTabsValeursInfSup10(tab : TABLEAU ENTIER)
+VARIABLES
+    nbValeursInf10 : ENTIER
+    nbValeursSup10 : ENTIER
+    tabRetour[n] : TABLEAU ENTIER
+DÉBUT
+    nbValeursInf10 → 0
+    nbValeursSup10 → 0
+
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI (tab[i] < 10) ALORS
+            nbValeursInf10++;
+        SINON
+            nbValeursSup10++;
+        FINSI
+    FINPOUR
+    
+    tabRetour → [nbValeursInf10, nbValeursSup10]
+
+    RETOURNER tabRetour
+FIN
+
+ALGORITHME exoTableau7
+VARIABLE
+    tableau1[n] : TABLEAU ENTIER
+    tabNotes[n] : TABLEAU ENTIER
+DÉBUT
+    tab → [5, 10 15, 20, 11, 9, 10]
+    tabNbNotes[1] → fonctionTabsValeursInfSup10(tab)
+
+    AFFICHER "Il y a ", tabNbNotes[0], " notes en dessous de 10"
+    AFFICHER "Il y a ", tabNbNotes[1], " notes en dessus de 10"
+FIN
