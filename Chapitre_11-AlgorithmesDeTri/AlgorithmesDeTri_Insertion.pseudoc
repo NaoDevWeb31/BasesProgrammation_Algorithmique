@@ -1,0 +1,23 @@
+/****************************************** EXEMPLE *******************************************/
+
+tab → [3, 6, 5, 1, 4, 2]
+
+FONCTION triInsert(tab : TABLEAU ENTIER)
+VARIABLES
+    valeur : ENTIER
+    cpt : ENTIER
+DÉBUT
+    POUR i ALLANT DE 1 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        valeur → tab[i]                                                 // tab[1] = valeur = 6
+        cpt → i                                                         // cpt = 1
+
+        TANT QUE (cpt > 0 ET tab[cpt-1] > valeur) FAIRE                 // décrémenter tant que le compteur > 0 ET valeur d'avant > valeur
+            tab[cpt] → tab[cpt-1]                                       // tab[1-1] = tab[0] = 3 ET 3(valeur d'avant) < 6(valeur)
+            cpt → i - 1
+        FINTANTQUE
+
+        tab[cpt] → valeur                                               // tab[1] = 6
+    FINPOUR
+FIN
+
+tab → [1, 2, 3, 4, 5, 6]
