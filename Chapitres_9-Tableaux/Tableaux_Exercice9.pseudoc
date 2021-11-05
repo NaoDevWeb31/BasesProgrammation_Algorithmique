@@ -1,0 +1,24 @@
+/****************************************** EXERCICE 9 *******************************************/
+
+FONCTION estTableauPaire(tab : TABLEAU ENTIER)
+DÉBUT
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI (tab[i] mod 2 != 0) ALORS
+            RETOURNER FAUX
+        FINSI
+    FINPOUR
+
+    RETOURNER VRAI
+FIN
+
+ALGORITHME exoTableau9
+VARIABLE
+    tab[n] : TABLEAU ENTIER
+DÉBUT
+    tab → [2, 4, 6, 8]
+    SI estTableauPaire(tab) ALORS
+        AFFICHER "Le tableau contient uniquement des valeurs paires"
+    SINON
+        AFFICHER "Le tableau ne contient pas que des valeurs paires"
+    FINSI
+FIN
