@@ -1,0 +1,74 @@
+/****************************************** PARTIE 4 *******************************************/
+
+PROCEDURE afficherTableau(tab)
+DÉBUT
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+PROCEDURE nbMots4LettresMin(tab : TABLEAU CHAINE DE CARACTERE)
+VARIABLE
+    nbMots : ENTIER
+DÉBUT
+    nbMots → 0
+
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI (taille(tab[i]) > 3 ) ALORS
+            nbMots++;
+        FINSI
+    FINPOUR
+    
+    AFFICHER "Le nombre de prénoms ayant plus de 3 lettres est de : ", nbMots
+FIN
+
+FONCTION motAleatoire(tab : TABLEAU CHAINE DE CARACTERE)
+VARIABLE
+    random : ENTIER
+DÉBUT
+    random → aleatoire(0, taille(tab)-1)
+    RETOURNER tab[random]
+FIN
+
+PROCEDURE afficherMenu
+VARIABLE
+    monMenu : CHAINE DE CARACTERE
+DÉBUT
+    monMenu → "1 / Afficher la liste de prénoms"
+    monMenu → monMenu +  "2 / Afficher le nombre de prénoms ayant plus de 3 lettres"
+    monMenu → monMenu +  "3 / Afficher un prénom de la liste"
+    monMenu → monMenu +  "0 / Quitter"
+    AFFICHER monMenu
+FIN
+
+ALGORITHME miniAppli
+VARIABLE
+    t[n] : TABLEAU ENTIER
+    choixMenu : ENTIER
+    tabPrenoms[c] : TABLEAU CHAINE DE CARACTERE
+    prenomAleatoire : CHAINE DE CARACTERE
+DÉBUT
+    tabPrenoms → ["Matthieu", "Noah", "Clarisse", "Paul"]
+    
+    FAIRE 
+        afficherMenu
+        
+        AFFICHER "Quelle action souhaitez-vous effectuer ?"
+
+        SAISIR choixMenu
+
+        SELON choixMenu FAIRE
+            
+            CAS 1 : afficherTableau(tabPrenoms)
+
+            CAS 2 : nbPrenoms4LettresMin → nbMots4LettresMin(tabPrenoms)
+
+            CAS 3 : prenomAleatoire → motAleatoire(tabPrenoms)
+                    AFFICHER "Le prénom aléatoire est : ", prenomAleatoire
+
+            CAS 0 : AFFICHER "À plus !"
+
+            AUTREMENT : AFFICHER "Je n'ai pas compris"
+        FINSELON
+    TANT QUE (choixMenu != 0)
+FIN
