@@ -1,0 +1,28 @@
+/****************************************** EXERCICE 5 *******************************************/
+
+FONCTION fonctionTabSommeValeurInf10(tab : TABLEAU ENTIER)
+VARIABLE
+    resultat : ENTIER
+DÉBUT
+    resultat → 0
+
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI (tab[i] < 10) ALORS
+            resultat → resultat + tab[i]
+        FINSI
+    FINPOUR
+    
+    RETOURNER resultat
+FIN
+
+ALGORITHME exoTableau5
+VARIABLE
+    t[n] : TABLEAU ENTIER
+DÉBUT
+    POUR i ALLANT DE 0 À 5 PAR PAS DE 1 FAIRE
+        tab[i] → aleatoire(1, 20)
+    FINPOUR
+
+    AFFICHER "La somme est de ", fonctionTabSommeValeurInf10(t)
+FIN
+
