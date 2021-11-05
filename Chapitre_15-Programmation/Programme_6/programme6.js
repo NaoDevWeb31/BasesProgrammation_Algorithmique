@@ -1,7 +1,9 @@
 var readline = require("readline-sync");
 
-do {
-  var chiffre = readline.questionInt("Saisir un chiffre entre 10 et 20 : ");
+var chiffre = 0;
+
+while (chiffre < 10 || chiffre > 20) {
+  chiffre = readline.questionInt("Saisir un chiffre entre 10 et 20 : ");
 
   if (chiffre < 10) {
     console.log("Le chiffre est trop petit !");
@@ -10,4 +12,4 @@ do {
   } else {
     console.log("Le chiffre est bien compris entre 10 et 20 !");
   }
-} while (chiffre < 10 || chiffre > 20);
+}
