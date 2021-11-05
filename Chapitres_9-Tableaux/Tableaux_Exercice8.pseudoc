@@ -1,0 +1,34 @@
+/****************************************** EXERCICE 8 *******************************************/
+
+FONCTION saisirTabMots(nbreDeMots : ENTIER)
+VARIABLE
+    tabMots[c] : TABLEAU DE CARACTERE
+DÉBUT
+    POUR i ALLANT DE 0 À nbreDeMots-1 PAR PAS DE 1 FAIRE
+        AFFICHER "Veuillez saisir un mot :"
+        SAISIR tabMots[i]
+    FINPOUR
+
+    RETOURNER tabMots
+FIN
+
+FONCTION afficherTableau(tab)
+DÉBUT
+    POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+ALGORITHME exoTableau8
+VARIABLES
+    nombre : ENTIER
+    tabMots[c] : TABLEAU CHAINE DE CARACTERE
+DÉBUT
+    AFFICHER "Combien de mots souhaitez-vous saisir ?"
+
+    SAISIR nombre
+    
+    tabMots → saisirTabMots(nombre)
+    
+    afficherTableau(tabMots)
+FIN
