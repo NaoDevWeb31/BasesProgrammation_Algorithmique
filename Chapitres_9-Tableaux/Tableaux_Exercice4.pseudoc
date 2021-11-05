@@ -1,6 +1,6 @@
 /****************************************** EXERCICE 4 *******************************************/
 
-FONCTION fonctionTableau(tab)
+FONCTION fonctionTableau(tab : TABLEAU ENTIER)
 DÉBUT
     POUR i ALLANT DE 0 À taille(tab)-1 PAR PAS DE 1 FAIRE
         AFFICHER tab[i]
@@ -21,5 +21,5 @@ DÉBUT
     tabLettres[2] → "c"
 
     fonctionTableau(tabNombres)
-    fonctionTableau(tabLettres)
+    fonctionTableau(tabLettres) // Ne fonctionne plus car TABLEAU DE CARACTERE
 FIN
