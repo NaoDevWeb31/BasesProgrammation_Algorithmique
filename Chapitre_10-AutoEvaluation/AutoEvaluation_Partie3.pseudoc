@@ -9,19 +9,19 @@ DÉBUT
     avancer
     tournerDroite
 
-    POUR i ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+    TANT QUE pasToucherMur // Erreur corrigée ici
         avancer
-    FINPOUR
+    FINTANTQUE
 
     tournerDroite
 
-    POUR i ALLANT DE 1 À 3 PAR PAS DE 1 FAIRE
+    TANT QUE pasToucherMur // Erreur corrigée ici
         avancer
-    FINPOUR
+    FINTANTQUE
 
     tournerDroite
 
-    POUR i ALLANT DE 1 À 2 PAR PAS DE 1 FAIRE // Erreur ici
+    POUR i ALLANT DE 1 À 2 PAR PAS DE 1 FAIRE // Erreur corrigée ici
         avancer
     FINPOUR
 
