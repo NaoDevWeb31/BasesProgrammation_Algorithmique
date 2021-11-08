@@ -8,7 +8,7 @@ Maîtriser l'algorithmique en pseudo-code dans ce cours axé sur la pratique et 
 
 ### Les bases indispensables de la programmation : Algorithmique
 
-Dans ce cours link, apprenez les bases de la programmation informatique au travers du sujet fondamental enseigné dans toutes les écoles supérieures d'informatique : [l'algorithmique](https://ecole.h2prog.com/p/algorithmique "Les bases indispensables de la programmation : Algorithmique").
+Dans ce cours, apprenez les bases de la programmation informatique au travers du sujet fondamental enseigné dans toutes les écoles supérieures d'informatique : [l'algorithmique](https://ecole.h2prog.com/p/algorithmique "Les bases indispensables de la programmation : Algorithmique").
 
 ## H2PROG
 
