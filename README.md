@@ -42,5 +42,5 @@ Apprentissage de l'algorithmique, du pseudo-code et création de vos premiers pr
 
 #### Suite du parcours
 
-Cours #2 ➤ https://github.com/NaoDevWeb31/Exercices_Algorithmique_Milo
+**Cours #2** ➤ [51 exercices d'algorithmique (avec Milo)](https://github.com/NaoDevWeb31/Exercices_Algorithmique_Milo "Repository du cours #2")
 
